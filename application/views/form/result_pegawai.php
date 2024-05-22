@@ -1,37 +1,37 @@
 <table>
-<tr>
+    <tr>
 
-<td>Nama</td>
-<td>:</td>
-<td><?php echo $name; ?></td>
+        <td>Nama</td>
+        <td>:</td>
+        <td><?php echo $name; ?></td>
 
-</tr>
-<tr>
+    </tr>
+    <tr>
 
-<td>Email</td>
-<td>:</td>
-<td><?php echo $email; ?></td>
+        <td>Email</td>
+        <td>:</td>
+        <td><?php echo $email; ?></td>
 
-</tr>
-<tr>
+    </tr>
+    <tr>
 
-<td>Jenis Kelamin</td>
-<td>:</td>
-<td><?php echo $jenis_kelamin; ?></td>
+        <td>Jenis Kelamin</td>
+        <td>:</td>
+        <td><?php echo $jenis_kelamin; ?></td>
 
-</tr>
-<tr>
+    </tr>
+    <tr>
 
-<td>Agama</td>
-<td>:</td>
-<td><?php echo $agama; ?></td>
+        <td>Agama</td>
+        <td>:</td>
+        <td><?php echo $agama; ?></td>
 
-</tr>
-<tr>
+    </tr>
+    <tr>
 
-<td>Alamat</td>
-<td>:</td>
-<td><?php echo $alamat; ?></td>
+        <td>Alamat Lengkap</td>
+        <td>:</td>
+        <td><?php echo $alamat; ?></td>
 
-</tr>
+    </tr>
 </table>
