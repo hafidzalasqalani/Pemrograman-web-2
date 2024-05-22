@@ -23,7 +23,7 @@
         <div class="brand-logo"></div>
         <div class="brand-title">LOGIN</div>
         <form method="post" action="<?php echo base_url(); ?>form/login/login">
-            <label>Username : </label>
+            <label>Username Kamu : </label>
             <input type="text" name="username">
             <br>
             <label>Password : </label>
