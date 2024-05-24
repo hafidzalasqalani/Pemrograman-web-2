@@ -12,7 +12,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.WEBC_CI }}
+        key: ${{ secrets.KEY }}
         port: 22
         script: |
           cd /home/ubuntu/apps/Pemrograman-web-2
