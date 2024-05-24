@@ -1,0 +1,19 @@
+name: cd
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.WEB_CI }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: 22
+        script: |
+          cd /home/ubuntu/apps/Pemrograman-web-2
+          git pull origin main
+          sudo systemctl restart apache2.service
