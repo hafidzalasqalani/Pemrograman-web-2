@@ -10,9 +10,9 @@ jobs:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v1.0.3
       with:
-        host: ${{ secrets.WEB_CI }}
+        host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
+        key: ${{ secrets.WEB_CI }}
         port: 22
         script: |
           cd /home/ubuntu/apps/Pemrograman-web-2
