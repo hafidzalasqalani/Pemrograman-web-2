@@ -1,0 +1,22 @@
+name: Proses CD
+on:
+  push:
+    branches: [ stag ]
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: 22
+        script: |
+          cd /var/www/html/Pemrograman-web-2
+          git pull origin main
+          sudo systemctl restart apache2.service
+          cd application/config
+          sed -i "s|http://localhost/[a-zA-Z0-9]\+|http://localhost/Pemrograman-web-2|g" config.php
