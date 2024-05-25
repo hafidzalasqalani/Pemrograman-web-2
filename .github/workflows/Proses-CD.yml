@@ -1,7 +1,7 @@
 name: Proses CD
 on:
   push:
-    branches: [ main ]
+    branches: [ stag ]
 jobs:
 
   build:
