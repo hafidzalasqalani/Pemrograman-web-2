@@ -1,4 +1,4 @@
-name: cd
+name: Proses CD
 on:
   push:
     branches: [ main ]
