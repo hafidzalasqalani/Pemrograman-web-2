@@ -15,6 +15,8 @@ jobs:
         key: ${{ secrets.KEY }}
         port: 22
         script: |
-          cd /home/ubuntu/apps/Pemrograman-web-2
+          cd /var/www/html/Pemrograman-web-2
           git pull origin main
           sudo systemctl restart apache2.service
+          cd application/config
+          sed -i "s|http://localhost/[a-zA-Z0-9]\+|http://localhost/Pemrograman-web-2|g" config.php
