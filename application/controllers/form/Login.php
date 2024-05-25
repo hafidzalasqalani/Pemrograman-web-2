@@ -13,7 +13,7 @@ class Login extends CI_Controller
 
     public function index()
     {
-        // $this->load->view('form/login');
+        // $this->load->view('form/login'); // old
         $this->load->view('form/v_login');
     }
 
@@ -22,8 +22,8 @@ class Login extends CI_Controller
         $this->form_validation->set_rules('username', 'Username', 'required');
         $this->form_validation->set_rules('pwd', 'Password', 'required');
         $this->form_validation->set_error_delimiters('<div class="error">', '</div>');
-        $usr = $this->input->post('username');
-        $pwd = $this->input->post('pwd');
+        $usr = $this->input->post('email');
+        $pwd = $this->input->post('password');
 
         if ($this->form_validation->run() == TRUE) {
             if ($usr == 'admin' && $pwd == 'admin123') {
@@ -54,7 +54,7 @@ class Login extends CI_Controller
             ],
         ];
         $this->form_validation->set_rules($rules);
-        // $this->form_validation->set_rules('name', 'Name', 'required');
+        // $this->form_validation->set_rules('name', 'Name', 'required'); // versi satu satu
         // $this->form_validation->set_rules('email', 'Email', 'required');
         $this->form_validation->set_rules('phone', 'Phone', 'required');
 

@@ -14,8 +14,8 @@
     echo heading("Helper HTML - H6", 6);
     $gambar = array(
 
-        //'src' => 'http://localhost/belajarci/assets/img/bulb.png',
-        'src' => 'assets/img/bulb.png',
+        // 'src' => 'http://localhost/belajarci/assets/img/icons8-login-100.png',
+        'src' => 'assets/img/icons8-login-100.png',
         'alt' => 'Artesonraju - Wikipedia',
         'class' => 'post_images',
         'width' => '300',

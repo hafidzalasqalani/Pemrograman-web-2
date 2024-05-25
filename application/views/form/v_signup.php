@@ -1,4 +1,4 @@
-<link rel="stylesheet" href='http://localhost/belajarci/assets/css/signup.css' />
+<link rel="stylesheet" href='<?php echo base_url(); ?>assets/css/signup.css' />
 <div id="login">
     <!--form id="login_form"-->
     <form id="login_form" method="post" action="<?php echo base_url(); ?>form/login/signup">
